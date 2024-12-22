@@ -1,0 +1,1 @@
+This React Native bug is triggered when using AsyncStorage within a function that's called multiple times rapidly, such as during a continuous scroll event.  The issue stems from multiple concurrent AsyncStorage operations leading to data corruption or unexpected behavior, particularly when using `setItem` and `getItem` together.
